@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "providing calmness",
+  "version": "1.0",
+  "description": "For vk: hide the side list of chats, auto close phone number verification",
+  "icons": {
+    "128": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://vk.com/*"
+      ],
+      "js": [
+        "script.js"
+      ],
+      "css": [
+        "deleter.css"
+      ]
+    }
+  ]
+}
